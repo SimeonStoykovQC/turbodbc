@@ -115,7 +115,7 @@ for_one_database = pytest.mark.parametrize(
 
 def for_specific_databases(db_filter: Optional[str] = None):
     """
-    Use this decorator to execute a test function for a specific database configuration.
+    Use this decorator to execute a test function for a specific database configuration that contains the given filter.
 
     Please note the test function *must* take the parameters `dsn` and `configuration`,
     and in that order.
